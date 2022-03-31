@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-red-800 h-screen w-full animate-pulse">
+    <div class="bg-blue-800 h-screen w-full animate-pulse">
+
+        <div class="mb-20 p-4 text-2xl justify-center flex text-red-900">
+            Self Destruct Process Initiated
+        </div>
+        
+        <div class="flex mb-20 p-4 text-2xl justify-center flex">
+            <h1 class="p-2">R</h1>
+            <input id="R" type="text">
+        </div>
+        <div class="flex mb-20 p-4 text-2xl justify-center flex">
+            <h1 class="p-2">G</h1>
+            <input id="G" type="text">
+        </div>
+        <div class="flex mb-20 p-4 text-2xl justify-center flex">
+            <h1 class="p-2">B</h1>
+            <input id="B" type="text">
+        </div>
+        <div class="justify-center flex items-center">
+            <button class="bg-red-400 rounded-lg m-2 p-2" onclick="getVal()">Abort</button>
+        </div>
+
+        <script>
+            function getVal(){
+                const R = document.getElementById('R').value;
+                const G = document.getElementById('G').value;
+                const B = document.getElementById('B').value;
+                if(R==2 && G==2 && B==2){
+                    window.location.replace("fifth.html");
+                }
+                else{
+                    alert("Incorrect Abort Sequence")
+                }
+            }
+        </script>
+
+    </div>
+    
+</body>
+</html>

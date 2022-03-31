@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-blue-400 h-screen w-full">
+
+    <div class="bg-slate-400">
+        <h1 class="animate-pulse text-red-500 mb-40 p-4 text-2xl justify-center flex">A Bit of Knowledge you must have to pass this test</h1>
+    </div>
+
+    <div class="flex justify-center items-center">
+        <input class="rounded p-2" type="text" placeholder="Enter Key">
+        <button class="bg-red-400 rounded-lg m-2 p-2" onclick="getVal()">Enter</button>
+    </div>
+
+    <script>
+        function getVal(){
+            const val = document.querySelector('input').value;
+            if(val=="binary"){
+                window.location.replace("fourth.html");
+            }
+            else{
+                alert("Incorrect Test Try Again")
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
